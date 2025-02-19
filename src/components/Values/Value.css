@@ -1,0 +1,171 @@
+.values-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 120px;
+}
+
+.vission-box {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding-top: 30px;
+}
+
+.mission-box {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+}
+
+.mission,
+.vision {
+  width: 542px;
+  height: 299px;
+  padding: 30px 20px 20px 40px;
+  background-color: #ffffff3f;
+  border-radius: 60px;
+  box-shadow: rgb(246, 139, 51, 0.2) 0px 8px 24px;
+  border: 1px solid #f68b334f;
+  font-family: "DM Serif Display", serif;
+  z-index: 99;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.vision {
+  margin-left: 40px;
+  margin-top: -120px;
+}
+
+.image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56%;
+}
+
+.vission-box .image-container {
+  margin-bottom: 38px;
+}
+
+.illustration {
+  width: 257px;
+  height: auto;
+}
+
+.mission-img {
+  margin-top: -40px;
+  z-index: 120;
+}
+
+.vision-img {
+  margin-top: -68px;
+}
+
+.mission h2 {
+  color: #ef9540;
+  font-size: 34px;
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  line-height: 68.61px;
+}
+.vision h2 {
+  color: #ef9540;
+  font-size: 34px;
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  line-height: 68.61px;
+}
+
+.p-text {
+  font-family: Public Sans;
+  font-size: 20px;
+  font-weight: 300;
+  color: #686868;
+  line-height: 23.5px;
+}
+
+.highlight {
+  color: #ef9540;
+  font-weight: 500;
+  font-family: Public Sans;
+  font-size: 20px;
+  line-height: 23.5px;
+}
+
+.vission-box .image-container {
+  justify-content: flex-end !important;
+}
+
+/*Responsive */
+@media (max-width: 900px) {
+  .mission {
+    width: 420px;
+    padding: 30px 10px;
+  }
+  .vision {
+    width: 420px;
+    margin-left: 13px;
+    padding: 30px 10px;
+  }
+  .p-text {
+    font-size: 17px;
+  }
+  .highlight {
+    font-size: 18px;
+  }
+  .vission-box {
+    align-items: end;
+  }
+}
+@media (max-width: 480px) {
+  .values-container {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+    width: 366px;
+  }
+  .values-section {
+    width: 100%;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .mission-box {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 0;
+    flex-direction: column-reverse;
+  }
+  .mission {
+    width: 100%;
+    padding: 30px 20px;
+  }
+  .vission-box {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+  .vision {
+    width: 100%;
+    padding: 30px 20px;
+  }
+  .p-text {
+    font-size: 13px;
+  }
+  .vision-img {
+    margin-top: 5px !important;
+  }
+  .mission-img {
+    margin-bottom: -60px;
+  }
+  
+}

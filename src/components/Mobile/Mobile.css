@@ -1,0 +1,187 @@
+.mobile-app-container {
+  padding: 80px;
+  width: 1300px;
+  background-image: url(/public/Website/mobile-bg.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.inner-mobile-app {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.inner-app-left-section {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.inner-app-left-section h2 {
+  margin-bottom: 10px;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 42px;
+  color: #fff7cd;
+  font-family: "Inter", sans-serif;
+}
+.inner-app-left-section img {
+  width: 230px;
+  margin-left: -10px;
+}
+.moblie-playstore-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: -255px;
+}
+.moblie-playstore-box img {
+  width: 100%;
+  cursor: pointer;
+}
+.inner-app-right-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.playstore {
+  width: 30% !important;
+}
+.inner-app-right-section img {
+  width: 1000px;
+    cursor: pointer;
+    margin-top: 93px;
+}
+
+.img-boxes {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  margin-left: 11px;
+  margin-bottom: 30px;
+  z-index: 999;
+}
+
+.img-boxes img {
+  width: 50px;
+}
+
+.pro-img:hover {
+  transition: 0.5s !important;
+  z-index: 999 !important;
+  position: relative;
+  cursor: pointer;
+}
+
+.t-r-arrow {
+  width: 56px !important;
+  margin-left: 6px !important;
+  margin-top: 2px;
+  margin-bottom: -2px;
+  cursor: pointer;
+}
+
+.t-r-arrow:hover {
+  transform: translateY(-10px) !important;
+  transition: 0.5s !important;
+}
+
+/*Responsive*/
+@media (max-width: 900px) {
+  .mobile-app-container {
+    width: 800px !important;
+    padding: 55px !important;
+  }
+  .inner-app-right-section img {
+    width: 900px;
+    margin-top: 0;
+  }
+  
+}
+@media (max-width: 1280px) {
+  .mobile-app-container {
+    width: 1000px;
+  }
+  .moblie-playstore-box {
+    margin-bottom: -155px ;
+  }
+  .playstore {
+    width: 35% !important;
+  }
+}
+
+@media (max-width: 480px) {
+
+    .mobile-app-container {
+      width: 100% !important;
+      padding: 20px !important;
+      background-size: cover !important;
+    }
+    .mob-section{
+        height: auto !important;
+    }
+    .inner-mobile-app {
+      flex-direction: row !important;
+      align-items: center !important;
+    }
+  
+    .inner-app-left-section {
+      width: 50% !important;
+      text-align: center !important;
+    }
+  
+    .inner-app-left-section h2 {
+      font-size: 23px !important;
+      line-height: 23px !important;
+      text-align: left !important;
+    }
+  
+    .inner-app-left-section img {
+      width: 150px !important;
+      margin: 0 !important;
+    }
+  
+    .moblie-playstore-box {
+      flex-direction: row !important;
+      
+    }
+  
+    .moblie-playstore-box img {
+      width: 40% !important;
+    }
+  
+    .inner-app-right-section {
+      width: 50% !important;
+      
+    }
+  
+    .inner-app-right-section img {
+      width: 185% !important;
+      margin-bottom: -22px !important;
+    }
+  
+    .img-boxes {
+      justify-content: center !important;
+    }
+  
+    .img-boxes img {
+      width: 28px !important
+    }
+  
+    .t-r-arrow {
+      width: 40px !important;
+      margin: 5px 0 !important;
+    }
+  
+    .t-r-arrow:hover {
+      transform: translateY(-5px) !important;
+      transition: 0.3s !important;
+    }
+  }
+  

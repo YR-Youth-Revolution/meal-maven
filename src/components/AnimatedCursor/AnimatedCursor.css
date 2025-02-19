@@ -1,0 +1,40 @@
+
+  .cursor{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color:  #ffffff00;
+  transition: background-color 0.2s ease-in-out;
+  border: 1px solid #F68B33;
+  z-index: 99 !important;
+  
+  }
+  .cursor-hover{
+    background: #f3c9a794;
+  } 
+
+  .cursor-dot{
+
+    width: 10px;
+    height: 10px;
+    background-color: #F68B33;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    transform: translate(-50%, -50%);
+    transition: background-color 1s ease-in-out;
+    transition-delay: 3s !important; 
+    animation: blink 1s infinite;
+    z-index: 99999999 !important;
+  }
+
+  @keyframes blink {
+    0% { background-color: #F68B33; }
+    50% { background-color: transparent; }
+    100% { background-color: #F68B33; }
+  }

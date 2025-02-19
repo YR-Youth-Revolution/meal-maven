@@ -1,0 +1,87 @@
+.preloader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: linear-gradient(to bottom right, rgba(255, 247, 205, 0.6), rgba(255, 247, 205, 0.6));
+  position: relative;
+  background-position: center;
+  background-size: 1800px;
+  background-repeat: repeat-x;
+  animation: animatedBackground 20s linear infinite;
+}
+
+.preloader-image {
+  width: 40%;
+}
+
+.reveal-text {
+  text-transform: uppercase !important;
+  color: #F68B33;
+  font-family: 'Popular Cafe NF', sans-serif;
+  font-size: 120px;
+  font-weight: 600;
+  letter-spacing: 20px;
+}
+
+.reveal-next-text {
+  color: #570E0F;
+  font-family: 'Popular Cafe NF', sans-serif;
+  font-size: 120px;
+  font-weight: 600;
+  letter-spacing: 20px;
+}
+
+@keyframes animatedBackground {
+  0% {
+    background-position: 50%;
+  }
+  100% {
+    background-position: -100%;
+  }
+}
+
+@keyframes revealAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.pre-text-box, .text-load-box {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .preloader-image {
+    width: 60%; /* Adjust the image size for smaller screens */
+  }
+
+  .reveal-text, .reveal-next-text {
+    font-size: 60px; /* Reduce the font size for text */
+    letter-spacing: 10px; /* Adjust spacing for better readability */
+  }
+
+  .pre-text-box, .text-load-box {
+    flex-direction: row; /* Stack text boxes vertically */
+    align-items: center; /* Center-align for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .preloader-image {
+    width: 70%; /* Further adjust image size for very small screens */
+  }
+
+  .reveal-text, .reveal-next-text {
+    font-size: 40px; /* Further reduce font size */
+    letter-spacing: 5px; /* Reduce spacing */
+  }
+}

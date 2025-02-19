@@ -1,0 +1,239 @@
+.main-bg {
+  width: 100vw;
+}
+
+.main-bg img {
+  width: 100%;
+}
+
+.craving-container {
+  width: 1440px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 32px;
+  margin-top: 100px;
+}
+
+.main-menu {
+  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(2, 300px);
+  justify-content: flex-start;
+  gap: 30px;
+}
+
+.boxes {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  width: 210px;
+  height: 256px;
+  padding: 20px 10px;
+  border: 1px solid #f68b339f;
+  border-radius: 142px 142px 52px 52px;
+  background-color: #fff7cd;
+  position: relative;
+}
+
+.boxes p {
+  font-family: "Public Sans", sans-serif;
+  font-size: 20px;
+  color: #f68b33;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.boxes .dots-border-menu {
+  --size_border: calc(210px + 0px);
+  --border_radius: 142px 142px 52px 52px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: var(--size_border);
+  height: calc(256px + 0px);
+  border-radius: var(--border_radius);
+  background-color: transparent;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.boxes .dots-border-menu::before {
+  content: "";
+  position: absolute;
+  top: -9%;
+  left: 41%;
+  width: 50px;
+  height: 313px;
+  border: 2px solid #fff7cd;
+  border-radius: inherit;
+  background-color: #fff7cd;
+  animation: rotates 5s linear infinite;
+  mask-image: radial-gradient(circle, #f68b33 90%, #f68b33 95%);
+  -webkit-mask-image: radial-gradient(circle, #f68b33 90%, #f68b33 95%);
+}
+
+@keyframes rotates {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.boxes svg {
+  z-index: 2;
+}
+.boxes p {
+  z-index: 2;
+}
+
+.craving-content {
+  width: 50%;
+  padding-left: 150px;
+  margin-top: -10px;
+}
+
+.craving-content h2 {
+  font-size: 82px;
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  color: #ef9540;
+  line-height: 82px;
+  margin-bottom: 25px;
+  width: 350px;
+}
+
+.dummy-box {
+  height: 75px;
+  background-color: #f68b33;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 7px;
+}
+.dummy-box2 {
+  height: 65px;
+  background-color: #f68b33;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 93px;
+}
+.dummy-box3 {
+  height: 70px;
+  background-color: #f68b33;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 177px;
+}
+.craving-content p {
+  font-family: Public Sans;
+  font-size: 20px;
+  font-weight: 300 !important;
+  color: #686868;
+}
+.bold-orange {
+  font-family: Public Sans;
+  font-size: 20px;
+  color: #f68b33;
+  font-weight: 500;
+  line-height: 23.5px;
+}
+
+.rotate-img {
+  width: 200px !important;
+  position: absolute;
+  top: -109px;
+  left: -115px;
+  z-index: 3;
+}
+
+/*Responsive */
+@media (max-width: 1280px) {
+  .craving-container {
+    width: 1200px;
+  }
+}
+@media (max-width: 1380px) {
+  .craving-container {
+    width: 1200px;
+  }
+}
+
+@media (max-width: 900px){
+  .craving-container{
+    width: 800px;
+    padding: 10px;
+  }
+  .main-menu{
+    width: 50%;
+    grid-template-columns:repeat(2,200px);
+    gap: 20px;
+  }
+
+  .craving-content{
+    width: 50%;
+    padding-left: 70px;
+    margin-top: 24px;
+  }
+  .craving-content h2{
+    font-size: 65px;
+    line-height: 65px;
+  }
+  .craving-content p{
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px){
+
+  .rotate-img{
+    width: 166px !important;
+  }
+  .craving-container{
+    width: 360px;
+    padding: 10px;
+    flex-direction: column;
+  }
+
+  .main-menu{
+    width: 100%;
+    grid-template-columns: repeat(2,160px);
+    gap: 20px;
+  }
+  .boxes{
+    width: 160px;
+    height: 200px;
+  }
+
+  .boxes .dots-border-menu::before{
+    top: 11%;
+    left: 37%;
+    width: 50px;
+    height: 169px;
+  }
+  .craving-content{
+    width: 100%;
+    padding-left: 20px;
+    margin-top: 24px;
+  }
+  .main-bg img{
+
+    width: 133%;
+    margin-left: -70px;
+  }
+
+
+
+}
