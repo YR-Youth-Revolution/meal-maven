@@ -15,10 +15,10 @@ import LeaveYourComment from "./LeaveYourComment";
 const IndianHomeFood = () => {
     return (
         <>
-         {/* <Helmet>
-                <title> Indian Tiffin Services in Toronto</title>
+         <Helmet>
+                <title> Indian home food in Canada</title>
                 <meta name="description" content="Searching for Indian home food ? We got you, Mealmaven deliver best home cooked indian foods to your door step" />
-            </Helmet> */}
+            </Helmet>
             <section className="header-section">
                 <Header />
             </section>

@@ -13,7 +13,7 @@ const MealsUnder = () => {
     return (
         <>
          <Helmet>
-                <title> Indian Tiffin Services in Toronto</title>
+                <title>A Week of Nutritious Indian Meals Under $50</title>
                 <meta name="description" content="Searching for Indian home food ? We got you, Mealmaven deliver best home cooked indian foods to your door step" />
             </Helmet>
             <section className="header-section">

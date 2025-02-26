@@ -14,7 +14,7 @@ const ProfitableBusiness = () => {
     return (
         <>
          <Helmet>
-                <title> Indian Tiffin Services in Toronto</title>
+                <title>What are the profitable business ideas for housewives? </title>
                 <meta name="description" content="Searching for Indian home food ? We got you, Mealmaven deliver best home cooked indian foods to your door step" />
             </Helmet>
             <section className="header-section">
