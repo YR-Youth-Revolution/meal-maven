@@ -37,7 +37,7 @@ const ValentineDayFood = () => {
 
                 <div className="blog-container-details">
                     <div className="blog-details">
-                        <b class="post-date-details">Posted on: February 5, 2025</b>
+                        <b class="post-date-details">Posted on: February 14, 2025</b>
                 
                         <div class="blog-content-details">
                      
