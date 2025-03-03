@@ -14,6 +14,7 @@ import blog8 from "/public/Website/IMAGE 2 copy.jpg"
 import blog9 from "/public/Website/IMAGE 4.png"
 import blog10 from "/public/Website/IMAGE 1 copy.jpg"
 import blog11 from "/public/Website/IMAGE 2 copy.png"
+import blog12 from "/public/Website/canadian-students.jpg"
 
 
 
@@ -37,6 +38,19 @@ const Blog = () => {
                 
                 <div className="blog">
                         <img
+                            src={blog12}
+                            alt="tiffin services near me"
+                            className="blog1"
+                        />
+                        <div className="blog-content">
+                            <b className="post-date">Posted on: February 28, 2025</b>
+                            <h3 className=".blog-h3">What are the Best Side Hustles to Do in Canada</h3>
+                            <p className=".blog-p">Before you know it, things can keep crumbling down. It is better to act faster by building a side hustle for yourself to keep that piggy....</p>
+                            <a href="blogs/what-are-the-best-side-hustles-to-do-in-canada" className="read-more-btn">Read More</a>
+                        </div>
+                    </div>
+                <div className="blog">
+                        <img
                             src={blog11}
                             alt="tiffin services near me"
                             className="blog1"
@@ -48,9 +62,7 @@ const Blog = () => {
                             <a href="blogs/profitable-business" className="read-more-btn">Read More</a>
                         </div>
                     </div>
-                 
-                  
-                   
+    
                     <div className="blog">
                         <img
                             src={blog10}
@@ -64,7 +76,12 @@ const Blog = () => {
                             <a href="blogs/must-try-indian-restaurants" className="read-more-btn">Read More</a>
                         </div>
                     </div>
-                    <div className="blog">
+                    
+                 
+                    </div>
+                <div className="blog-container">
+
+                <div className="blog">
                         <img
                             src={blog9}
                             alt="tiffin services near me"
@@ -79,9 +96,6 @@ Isn’t it the time to turn your elaborate cooking into an easier one?   </p>
                             <a href="blogs/one-pot-receipe" className="read-more-btn">Read More</a>
                         </div>
                     </div>
-                 
-                    </div>
-                <div className="blog-container">
               
                 <div className="blog">
                         <img
@@ -112,6 +126,11 @@ Isn’t it the time to turn your elaborate cooking into an easier one?   </p>
                             <a href="blogs/valentine-day-for-a-food-lover" className="read-more-btn">Read More</a>
                         </div>
                     </div>
+                    
+                    </div>
+                    
+                    <div className="blog-container">
+
                     <div className="blog">
                         <img
                             src={blog4}
@@ -125,9 +144,6 @@ Isn’t it the time to turn your elaborate cooking into an easier one?   </p>
                             <a href="blogs/Indian-home-food-in-canada.jsx" className="read-more-btn">Read More</a>
                         </div>
                     </div>
-                    </div>
-                    
-                    <div className="blog-container">
                  
                     <div className="blog">
                         <img
@@ -155,6 +171,11 @@ Isn’t it the time to turn your elaborate cooking into an easier one?   </p>
                             <a href="blogs/platform-for-growth.jsx" className="read-more-btn">Read More</a>
                         </div>
                     </div>
+                    
+                    
+                    </div>
+                    <div className="blog-container">
+
                     <div className="blog">
                         <img
                             src={blog6}
@@ -168,9 +189,6 @@ Isn’t it the time to turn your elaborate cooking into an easier one?   </p>
                             <a href="blogs/mealsunder-$50.jsx" className="read-more-btn">Read More</a>
                         </div>
                     </div>
-                    
-                    </div>
-                    <div className="blog-container">
                    
                     <div className="blog">
                         <img

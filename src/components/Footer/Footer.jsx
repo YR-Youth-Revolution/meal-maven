@@ -64,7 +64,7 @@ const Footer = () => {
       <div className="footer-bottom">
         <div className="copy-rights-row">
         <p>All Rights Reserved @ <a href='https://yrmedia.in' target='blank'>yr media</a></p>
-        <p><a href="#terms">Terms & Conditions</a> | <a href="#privacy">Privacy Policy</a></p>
+        <p><a href="/terms-and-conditions">Terms & Conditions</a> | <a href="/privacy-policy">Privacy Policy</a></p>
 
         </div>
         

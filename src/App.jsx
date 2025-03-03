@@ -15,6 +15,10 @@ import IndianWomenEntrepreneurs from "./components/Blog-details/women-entrep";
 import OnePotReceipe from "./components/Blog-details/OnePotReceipe";
 import MustTryIndianRestaurants from "./components/Blog-details/must-try-indian-restaur";
 import ProfitableBusiness from "./components/Blog-details/women-profit";
+import PrivacyPolicy from "./components/Privacy-Policy/Privacy-Policy";
+import TermsAndConditions from "./components/Privacy-Policy/TermsandConditions";
+import BestSideHustles from "./components/Blog-details/best-side-hustles";
+
 
 
 const App = () => {
@@ -39,6 +43,9 @@ const App = () => {
           <Route path="blogs/one-pot-receipe" element={<OnePotReceipe/>}/>
           <Route path="blogs/must-try-indian-restaurants" element={<MustTryIndianRestaurants/>}/>
           <Route path="blogs/profitable-business" element={<ProfitableBusiness/>}/>
+          <Route path="/privacy-policy" element={<PrivacyPolicy/>}/>
+          <Route path="/terms-and-conditions" element={<TermsAndConditions/>}/>
+          <Route path="blogs/what-are-the-best-side-hustles-to-do-in-canada" element={<BestSideHustles/>}/>
         </Routes>
       </BrowserRouter>
 
